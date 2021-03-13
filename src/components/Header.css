@@ -1,0 +1,21 @@
+.header {
+	grid-column: 1/5;
+	grid-row: 1/2;
+	width: 100vw;
+	background-color: green;
+}
+
+.header_inner {
+	padding-left: 10px;
+	padding-right: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.header_text {
+	color: white;
+	font-size: 24px;
+	font-weight: 700;
+}

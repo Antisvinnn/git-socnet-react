@@ -1,3 +1,5 @@
+import './Profile.css';
+
 const Content = () => {
 	return (
 		<div className='profile_content'>

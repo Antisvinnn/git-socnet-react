@@ -1,0 +1,23 @@
+.nav {
+	text-align: left;
+	/* background-color: rgb(189, 189, 189); */
+	background-color: rgb(231, 231, 231);
+	border-left: 1px solid rgb(151, 134, 134);
+	line-height: 2.6;
+	padding: 10px;
+	padding-left: 20px;
+	font-size: 25px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.nav_link {
+	color: rgb(151, 134, 134);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+.nav_link:hover {
+	transition: border-color 0.3s linear;
+	border-bottom: 1px solid rgb(151, 134, 134);
+}
