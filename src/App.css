@@ -59,10 +59,11 @@
 .nav_link {
 	color: rgb(151, 134, 134);
 	text-decoration: none;
-	transition: border 0.5s linear;
+	border-bottom: 1px solid rgb(231, 231, 231);
 }
 
 .nav_link:hover {
+	transition: border-color 0.3s linear;
 	border-bottom: 1px solid rgb(151, 134, 134);
 }
 
