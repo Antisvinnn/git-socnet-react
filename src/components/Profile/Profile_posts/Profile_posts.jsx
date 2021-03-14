@@ -20,10 +20,10 @@ const Profile_posts = () => {
 			<hr className={s.border_line} />
 
 			<div className={s.profile_container}>
-				<Post />
-				<Post />
-				<Post />
-				<Post />
+				<Post message='Hello, world!' like_count='5' />
+				<Post message='Hello, baby!' like_count='25' />
+				<Post message='Welcome to the club, body!' like_count='35' />
+				<Post message='It is my first comment' like_count='55' />
 			</div>
 		</div>
 	);
