@@ -1,0 +1,9 @@
+.post {
+	height: auto;
+}
+
+.avatar_post {
+	height: 65px;
+	width: 65px;
+	border-radius: 65px;
+}

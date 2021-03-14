@@ -1,0 +1,29 @@
+.profile_content {
+	background-color: rgb(231, 231, 231);
+	grid-column: 3/4;
+	grid-row: 2/4;
+}
+
+.background_profile_img {
+	border-radius: 10px;
+	width: 100%;
+	height: 350px;
+}
+
+.ava {
+	margin-top: 10px;
+}
+
+.profile_container {
+	padding: 10px;
+}
+
+.border_line {
+	margin: 0;
+	box-shadow: none;
+	height: 10px;
+	width: 100%;
+	left: 0;
+	border: 0;
+	background-color: rgb(219, 219, 219);
+}

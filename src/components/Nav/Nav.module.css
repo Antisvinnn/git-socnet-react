@@ -17,6 +17,10 @@
 	border-bottom: 1px solid transparent;
 }
 
+.nav_link.active {
+	color: rgb(179, 152, 2);
+}
+
 .nav_link:hover {
 	transition: border-color 0.3s linear;
 	border-bottom: 1px solid rgb(151, 134, 134);
