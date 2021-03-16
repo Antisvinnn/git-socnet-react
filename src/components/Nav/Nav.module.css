@@ -2,9 +2,10 @@
 	text-align: left;
 	/* background-color: rgb(189, 189, 189); */
 	background-color: rgb(231, 231, 231);
-	border-left: 1px solid rgb(151, 134, 134);
+	border-left: 1px solid rgb(83, 83, 83);
 	line-height: 2;
 	font-size: 25px;
+	font-weight: 300;
 	grid-column: 2/3;
 	grid-row: 2/3;
 }

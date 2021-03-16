@@ -1,7 +1,6 @@
 import s from './Post.module.css';
 
 const Post = (props) => {
-	console.log(props);
 	return (
 		<div className={s.post}>
 			<img className={s.avatar_post} src='http://placehold.it/55' alt='' />

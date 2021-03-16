@@ -1,0 +1,23 @@
+.Dialogs {
+	background-color: burlywood;
+	background-color: rgb(231, 231, 231);
+	grid-column: 3/4;
+	grid-row: 2/5;
+	padding: 10px;
+}
+
+.Dialogs_wrapper {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: 1fr;
+}
+
+.element_1 {
+	grid-column: 1/2;
+	background-color: chartreuse;
+}
+
+.element_2 {
+	grid-column: 2/3;
+	background-color: crimson;
+}

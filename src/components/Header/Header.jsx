@@ -9,7 +9,7 @@ const Header = () => {
 						<img src='http://placehold.it/40' alt='' />
 					</div>
 
-					<div className={s.header_text}>NE usaite OPERUUU</div>
+					<div className={s.header_text}>Tipovoy-sday.by ;)</div>
 				</div>
 			</div>
 		</header>
