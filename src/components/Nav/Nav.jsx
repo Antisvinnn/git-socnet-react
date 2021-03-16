@@ -1,15 +1,13 @@
+import { Link } from 'react-router-dom';
 import s from './Nav.module.css';
 
 const Nav = () => {
 	return (
 		<nav className={s.nav}>
 			<div className={s.nav_link_item}>
-				<a
-					href='https://google.com'
-					className={`${s.nav_link} ${s.active}`}
-				>
+				<Link to='/' className={s.nav_link}>
 					Profile
-				</a>
+				</Link>
 			</div>
 			<div className={s.nav_link_item}>
 				<a href='https://google.com' className={s.nav_link}>
@@ -17,9 +15,9 @@ const Nav = () => {
 				</a>
 			</div>
 			<div className={s.nav_link_item}>
-				<a href='https://google.com' className={s.nav_link}>
+				<Link to='/dialogs' className={s.nav_link}>
 					Messages
-				</a>
+				</Link>
 			</div>
 			<div className={s.nav_link_item}>
 				<a href='https://google.com' className={s.nav_link}>

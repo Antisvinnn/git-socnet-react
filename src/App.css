@@ -16,3 +16,9 @@
 	max-width: 1200px;
 	height: 100%;
 }
+
+.content_wrapper_main {
+	background-color: rgb(231, 231, 231);
+	grid-column: 3/4;
+	grid-row: 2/5;
+}
