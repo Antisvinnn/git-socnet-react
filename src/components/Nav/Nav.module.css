@@ -1,6 +1,5 @@
 .nav {
 	text-align: left;
-	/* background-color: rgb(189, 189, 189); */
 	background-color: rgb(231, 231, 231);
 	border-left: 1px solid rgb(83, 83, 83);
 	line-height: 2;
@@ -15,7 +14,6 @@
 	display: block;
 	color: black;
 	text-decoration: none;
-	border-bottom: 1px solid transparent;
 }
 
 .nav_link.active {

@@ -21,17 +21,7 @@ const Content = () => {
 					sapiente earum. Fugit tenetur velit voluptatum suscipit enim
 					nulla corrupti quidem porro aliquam placeat. Deserunt minus
 					dolorem placeat reprehenderit asperiores molestias repudiandae
-					saepe, recusandae, animi, provident praesentium tempora.
-					Consequatur, commodi. Officia quisquam quis doloremque eius ullam
-					deserunt perferendis deleniti iure, voluptates, aliquid placeat
-					sunt sit itaque! Veritatis aut provident, eius nesciunt amet,
-					voluptate voluptatibus fugit reprehenderit maxime corrupti
-					debitis corporis asperiores odio deleniti? Culpa illo, porro
-					facilis ipsam aut quas enim veniam impedit, quo consectetur ipsa
-					perspiciatis, accusantium voluptate quisquam placeat. Neque
-					inventore debitis enim, quia esse, quaerat porro dolor sequi
-					nesciunt quisquam eius modi laboriosam accusantium voluptas
-					consequuntur...
+					saepe.
 				</p>
 			</div>
 

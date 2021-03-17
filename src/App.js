@@ -1,18 +1,19 @@
 import { Route, Switch } from 'react-router';
 import './App.css';
+import Music from './pages/Music/index.js';
 import Dialogs from './pages/Dialogs';
-// import Profile from './components/Profile/Profile.jsx';
-// import Header from './components/Header/Header.jsx';
-// import Nav from './components/Nav/Nav.jsx';
-// import Dialogs from './components/Dialogs/Dialogs.jsx';
-// import { BrowserRouter, Router } from 'react-router-dom';
 import Main from './pages/Main';
+import News from './pages/News';
+import Settings from './pages/Settings';
 
 const App = () => {
 	return (
 		<Switch>
 			<Route exact path='/' component={Main} />
 			<Route exact path='/dialogs' component={Dialogs} />
+			<Route exact path='/music' component={Music} />
+			<Route exact path='/news' component={News} />
+			<Route exact path='/settings' component={Settings} />
 		</Switch>
 	);
 };

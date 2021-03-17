@@ -10,9 +10,9 @@ const Nav = () => {
 				</Link>
 			</div>
 			<div className={s.nav_link_item}>
-				<a href='https://google.com' className={s.nav_link}>
+				<Link to='/news' className={s.nav_link}>
 					News
-				</a>
+				</Link>
 			</div>
 			<div className={s.nav_link_item}>
 				<Link to='/dialogs' className={s.nav_link}>
@@ -20,14 +20,14 @@ const Nav = () => {
 				</Link>
 			</div>
 			<div className={s.nav_link_item}>
-				<a href='https://google.com' className={s.nav_link}>
-					Posts
-				</a>
+				<Link to='/settings' className={s.nav_link}>
+					Settings
+				</Link>
 			</div>
 			<div className={s.nav_link_item}>
-				<a href='https://google.com' className={s.nav_link}>
+				<Link to='/music' className={s.nav_link}>
 					Music
-				</a>
+				</Link>
 			</div>
 		</nav>
 	);
