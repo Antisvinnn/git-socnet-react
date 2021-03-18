@@ -12,7 +12,7 @@
 .nav_link {
 	padding-left: 20px;
 	display: block;
-	color: black;
+	color: black !important;
 	text-decoration: none;
 }
 
@@ -22,5 +22,5 @@
 
 .nav_link:hover {
 	transition: background-color 0.4s linear;
-	background-color: green;
+	background-color: rgb(82, 143, 255);
 }

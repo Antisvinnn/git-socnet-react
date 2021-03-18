@@ -1,21 +1,20 @@
 import Post from './Post/Post';
 import s from './Profile_posts.module.css';
+import { Button } from 'antd';
+import { Input } from 'antd';
 
 const Profile_posts = () => {
 	return (
 		<div className={s.profile_posts}>
 			{/* TEXT AREA + BUTTONS */}
 			<div className={s.profile_container}>
-				<textarea
-					name=''
-					id=''
-					cols='30'
-					rows='2'
-					className={s.textarea_post}
-				></textarea>
-
-				<button className={s.button_post}>Add post</button>
-				<button className={s.button_post}>Remove post</button>
+				{/* TEXTAREA INPUT */}
+				<Input className={s.input_area} placeholder='Type your text' />
+				<br />
+				<Button className={s.main_button} type='primary'>
+					Apply
+				</Button>
+				<Button>Dismiss</Button>
 			</div>
 
 			<hr className={s.border_line} />

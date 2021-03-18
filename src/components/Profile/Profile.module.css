@@ -16,7 +16,6 @@
 
 .profile_container {
 	padding: 10px;
-	height: auto;
 }
 
 .border_line {
@@ -24,7 +23,6 @@
 	box-shadow: none;
 	height: 10px;
 	width: 100%;
-	left: 0;
 	border: 0;
 	background-color: rgb(219, 219, 219);
 }
