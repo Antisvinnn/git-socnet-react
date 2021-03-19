@@ -4,6 +4,10 @@
 	grid-row: 2/5;
 }
 
+p {
+	margin: 0;
+}
+
 .background_profile_img {
 	border-radius: 10px;
 	width: 100%;

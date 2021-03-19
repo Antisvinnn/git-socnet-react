@@ -1,5 +1,24 @@
 import s from './Dialogs.module.css';
-import { Link } from 'react-router-dom';
+import DialogItemUser from './DialogItemUser.jsx';
+import DialogItemMessage from './DialogIItemMessage';
+
+const Dialogs_data = [
+	{ id: 1, name: 'Sveta' },
+	{ id: 2, name: 'Sasha' },
+	{ id: 3, name: 'Vadik' },
+	{ id: 4, name: 'Kirill' },
+	{ id: 5, name: 'Misha' },
+	{ id: 6, name: 'Dimych' },
+];
+
+const Messages_data = [
+	{ id: 1, Message: 'Hello world!' },
+	{ id: 2, Message: 'Metallica is my favourite groupe!' },
+	{ id: 3, Message: 'How are you?' },
+	{ id: 4, Message: 'To be accomplishment' },
+	{ id: 5, Message: 'Football very good' },
+	{ id: 6, Message: 'Mazafaker' },
+];
 
 const Dialogs = () => {
 	return (
@@ -7,63 +26,57 @@ const Dialogs = () => {
 			<div className={s.Dialogs_wrapper}>
 				{/* COLUMN 1 */}
 				<div className={s.column_1}>
-					<div className={s.dialog_item}>
-						<Link to='/dialogs/1'>Sveta</Link>
-					</div>
-					<div className={s.dialog_item}>
-						<Link to='/dialogs/2'>Serega</Link>
-					</div>
-					<div className={s.dialog_item}>
-						<Link to='/dialogs/3'>Vitalik</Link>
-					</div>
-					<div className={s.dialog_item}>
-						<Link to='/dialogs/4'>Vladik</Link>
-					</div>
-					<div className={s.dialog_item}>
-						<Link to='/dialogs/5'>Roma</Link>
-					</div>
-					<div className={s.dialog_item}>
-						<Link to='/dialogs/6'>Pavel</Link>
-					</div>
+					<DialogItemUser
+						id={Dialogs_data[0].id}
+						name={Dialogs_data[0].name}
+					/>
+					<DialogItemUser
+						id={Dialogs_data[1].id}
+						name={Dialogs_data[1].name}
+					/>
+					<DialogItemUser
+						id={Dialogs_data[2].id}
+						name={Dialogs_data[2].name}
+					/>
+					<DialogItemUser
+						id={Dialogs_data[3].id}
+						name={Dialogs_data[3].name}
+					/>
+					<DialogItemUser
+						id={Dialogs_data[4].id}
+						name={Dialogs_data[4].name}
+					/>
+					<DialogItemUser
+						id={Dialogs_data[5].id}
+						name={Dialogs_data[5].name}
+					/>
 				</div>
 				{/* COLUMN 2 */}
 				<div className={s.column_2}>
-					<div className={s.dialog_message}>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ad, maiores. Laborum in labore laboriosam alias.
-						</p>
-					</div>
-					<div className={s.dialog_message}>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ad, maiores. Laborum in labore laboriosam alias.
-						</p>
-					</div>
-					<div className={s.dialog_message}>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ad, maiores. Laborum in labore laboriosam alias.
-						</p>
-					</div>
-					<div className={s.dialog_message}>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ad, maiores. Laborum in labore laboriosam alias.
-						</p>
-					</div>
-					<div className={s.dialog_message}>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ad, maiores. Laborum in labore laboriosam alias.
-						</p>
-					</div>
-					<div className={s.dialog_message}>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Ad, maiores. Laborum in labore laboriosam alias.
-						</p>
-					</div>
+					<DialogItemMessage
+						id={Messages_data[0].id}
+						message={Messages_data[0].Message}
+					/>
+					<DialogItemMessage
+						id={Messages_data[1].id}
+						message={Messages_data[1].Message}
+					/>
+					<DialogItemMessage
+						id={Messages_data[2].id}
+						message={Messages_data[2].Message}
+					/>
+					<DialogItemMessage
+						id={Messages_data[3].id}
+						message={Messages_data[3].Message}
+					/>
+					<DialogItemMessage
+						id={Messages_data[4].id}
+						message={Messages_data[4].Message}
+					/>
+					<DialogItemMessage
+						id={Messages_data[5].id}
+						message={Messages_data[5].Message}
+					/>
 				</div>
 			</div>
 		</div>

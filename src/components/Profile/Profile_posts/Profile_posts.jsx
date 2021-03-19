@@ -3,7 +3,14 @@ import s from './Profile_posts.module.css';
 import { Button } from 'antd';
 import { Input } from 'antd';
 
-const Profile_posts = () => {
+const Posts_data = [
+	{ message: 'Hello', like_count: 2 },
+	{ message: 'Good bye', like_count: 22 },
+	{ message: 'It is my first comment to you', like_count: 122 },
+	{ message: 'Um vathasay', like_count: 223567 },
+];
+
+const Profile_posts = (props) => {
 	return (
 		<div className={s.profile_posts}>
 			<div className={s.profile_container}>
@@ -21,10 +28,22 @@ const Profile_posts = () => {
 
 			{/* POSTS */}
 			<div className={s.profile_container}>
-				<Post message='Hello, world!' like_count='5' />
-				<Post message='Hello, baby!' like_count='25' />
-				<Post message='Welcome to the club, body!' like_count='35' />
-				<Post message='It is my first comment' like_count='55' />
+				<Post
+					message={Posts_data[0].message}
+					like_count={Posts_data[0].like_count}
+				/>
+				<Post
+					message={Posts_data[1].message}
+					like_count={Posts_data[1].like_count}
+				/>
+				<Post
+					message={Posts_data[2].message}
+					like_count={Posts_data[2].like_count}
+				/>
+				<Post
+					message={Posts_data[3].message}
+					like_count={Posts_data[3].like_count}
+				/>
 			</div>
 		</div>
 	);
