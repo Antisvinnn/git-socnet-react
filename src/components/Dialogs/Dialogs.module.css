@@ -1,5 +1,4 @@
 .Dialogs {
-	background-color: burlywood;
 	background-color: rgb(231, 231, 231);
 	grid-column: 3/4;
 	grid-row: 2/5;
@@ -12,12 +11,18 @@
 	grid-template-rows: 1fr;
 }
 
-.element_1 {
+.column_1 {
+	padding: 10px;
 	grid-column: 1/2;
 	background-color: chartreuse;
 }
 
-.element_2 {
+.column_2 {
+	padding: 10px;
 	grid-column: 2/3;
-	background-color: crimson;
+}
+
+.dialog_item {
+	font-size: 20px;
+	font-weight: 400;
 }

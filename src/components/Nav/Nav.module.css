@@ -16,11 +16,11 @@
 	text-decoration: none;
 }
 
-.nav_link.active {
+.active_link {
 	color: rgb(179, 152, 2);
 }
 
 .nav_link:hover {
-	transition: background-color 0.4s linear;
+	transition: background-color 0.5s linear;
 	background-color: rgb(82, 143, 255);
 }

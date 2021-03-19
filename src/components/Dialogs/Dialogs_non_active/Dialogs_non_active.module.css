@@ -1,0 +1,6 @@
+.dialogs_non_active_container {
+	background-color: rgb(231, 231, 231);
+	grid-column: 3/4;
+	grid-row: 2/5;
+	padding: 10px;
+}

@@ -6,11 +6,11 @@ import { Input } from 'antd';
 const Profile_posts = () => {
 	return (
 		<div className={s.profile_posts}>
-			{/* TEXT AREA + BUTTONS */}
 			<div className={s.profile_container}>
 				{/* TEXTAREA INPUT */}
 				<Input className={s.input_area} placeholder='Type your text' />
 				<br />
+				{/* BUTTONS */}
 				<Button className={s.main_button} type='primary'>
 					Apply
 				</Button>

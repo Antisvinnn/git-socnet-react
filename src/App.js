@@ -5,12 +5,14 @@ import Dialogs from './pages/Dialogs';
 import Main from './pages/Main';
 import News from './pages/News';
 import Settings from './pages/Settings';
+import Dialogs_non_active from './pages/Dialogs_non_active';
 
 const App = () => {
 	return (
 		<Switch>
 			<Route exact path='/' component={Main} />
 			<Route exact path='/dialogs' component={Dialogs} />
+			<Route path='/dialogs' component={Dialogs_non_active} />
 			<Route exact path='/music' component={Music} />
 			<Route exact path='/news' component={News} />
 			<Route exact path='/settings' component={Settings} />
