@@ -27,7 +27,7 @@
 .dialog_item {
 	display: block;
 	width: 100%;
-	color: black;
+	color: black !important;
 	padding-left: 15px;
 	font-size: 20px;
 	font-weight: 400;
