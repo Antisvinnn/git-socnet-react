@@ -3,7 +3,7 @@ import s from './Profile.module.css';
 import Profile_posts from './Profile_posts/Profile_posts.jsx';
 import Profile_info from './Profile_info/Profile_info.jsx';
 
-const Content = () => {
+const Content = (props) => {
 	return (
 		<div className={s.profile_content}>
 			<Profile_info
@@ -13,7 +13,7 @@ const Content = () => {
 
 			<hr className={s.border_line} />
 
-			<Profile_posts />
+			<Profile_posts posts={props.posts} />
 		</div>
 	);
 };
