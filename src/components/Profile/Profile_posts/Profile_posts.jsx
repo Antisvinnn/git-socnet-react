@@ -3,12 +3,13 @@ import { Button } from 'antd';
 import { Input } from 'antd';
 import Post from './Post/Post.jsx';
 
-const Profile_posts = (props) => {
+const Profile_posts = ({ posts }) => {
 	// MAPPING
-	let Posts = props.posts.map((post) => {
-		return <Post message={post.message} like_count={post.like_count} />;
+	let Posts = posts.map((post, i) => {
+		return (
+			<Post key={i} message={post.message} like_count={post.like_count} />
+		);
 	});
-
 	return (
 		<div className={s.profile_posts}>
 			<div className={s.profile_container}>

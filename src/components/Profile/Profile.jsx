@@ -13,7 +13,7 @@ const Content = (props) => {
 
 			<hr className={s.border_line} />
 
-			<Profile_posts posts={props.posts} />
+			<Profile_posts posts={props.posts.Posts_data} />
 		</div>
 	);
 };

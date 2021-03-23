@@ -1,8 +1,9 @@
 Проект разработал Точёный Виталий
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1)Деструктуризация пропсов
+2)SCSS
+3)Название стилей с маленькой + назвать всё style
+4)МИнус комменты все
 
 ## Available Scripts
 

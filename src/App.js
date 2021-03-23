@@ -6,32 +6,35 @@ import Main from './pages/Main/index';
 import News from './pages/News/index';
 import Settings from './pages/Settings/index';
 import Dialogs_non_active from './pages/Dialogs_non_active/index';
+import Header from './components/Header/Header.jsx';
+import Nav from './components/Nav/Nav.jsx';
 
 const App = (props) => {
 	return (
 		// ЗДЕСЬ ПРОИСХОДИТ ПЕРЕКЛЮЧЕНИЕ
-		<Switch>
-			<Route exact path='/' render={() => <Main posts={props.posts} />} />
+		<div className='root_element_app'>
+			<Header />
+			<Nav />
 
-			<Route
-				exact
-				path='/dialogs'
-				render={() => (
-					<Dialogs
-						dialogs_users={props.dialogs_users}
-						dialogs_messages={props.dialogs_messages}
-					/>
-				)}
-			/>
-
-			<Route path='/dialogs' component={Dialogs_non_active} />
-
-			<Route exact path='/music' component={Music} />
-
-			<Route exact path='/news' component={News} />
-
-			<Route exact path='/settings' component={Settings} />
-		</Switch>
+			<Switch>
+				<Route
+					exact
+					path='/'
+					render={() => <Main state={props.state.Profile_page} />}
+				/>
+				<Route
+					exact
+					path='/dialogs'
+					render={() => (
+						<Dialogs Dialogs_page={props.state.Dialogs_page} />
+					)}
+				/>
+				<Route path='/dialogs' component={Dialogs_non_active} />
+				<Route exact path='/music' component={Music} />
+				<Route exact path='/news' component={News} />
+				<Route exact path='/settings' component={Settings} />
+			</Switch>
+		</div>
 	);
 };
 

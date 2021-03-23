@@ -9,11 +9,7 @@ import state from './redux/state.js';
 ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<App
-				posts={state.Posts_data}
-				dialogs_users={state.Dialogs_data}
-				dialogs_messages={state.Messages_data}
-			/>
+			<App state={state} />
 		</BrowserRouter>
 	</React.StrictMode>,
 	document.getElementById('root')
