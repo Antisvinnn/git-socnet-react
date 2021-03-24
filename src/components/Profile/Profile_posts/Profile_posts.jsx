@@ -4,7 +4,6 @@ import { Input } from 'antd';
 import Post from './Post/Post.jsx';
 
 const Profile_posts = ({ posts }) => {
-	// MAPPING
 	let Posts = posts.map((post, i) => {
 		return (
 			<Post key={i} message={post.message} like_count={post.like_count} />
@@ -17,10 +16,12 @@ const Profile_posts = ({ posts }) => {
 				<Input className={s.input_area} placeholder='Type your text' />
 				<br />
 				{/* BUTTONS */}
-				<Button className={s.main_button} type='primary'>
+				<Button className={s.main_button} type='default'>
 					Apply
 				</Button>
-				<Button>Dismiss</Button>
+				<Button color='red' colorHover='gren'>
+					Dismiss
+				</Button>
 			</div>
 
 			<hr className={s.border_line} />

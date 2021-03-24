@@ -5,6 +5,7 @@
 }
 
 .root_element_app {
+	width: 100%;
 	grid-gap: 15px;
 	display: grid;
 	grid-template-rows: 60px 250px 100px 1fr;

@@ -8,13 +8,14 @@ import Settings from './pages/Settings/index';
 import Dialogs_non_active from './pages/Dialogs_non_active/index';
 import Header from './components/Header/Header.jsx';
 import Nav from './components/Nav/Nav.jsx';
+import Friends from './components/Profile/Friends/Friends';
 
 const App = (props) => {
 	return (
-		// ЗДЕСЬ ПРОИСХОДИТ ПЕРЕКЛЮЧЕНИЕ
 		<div className='root_element_app'>
 			<Header />
 			<Nav />
+			<Friends friends={props.state.Profile_page.Friends} />
 
 			<Switch>
 				<Route
