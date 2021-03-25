@@ -5,7 +5,7 @@ const Profile_info = (props) => {
 		<div className={s.profile_container}>
 			<img
 				className={s.background_profile_img}
-				src='https://placehold.it/1920'
+				src='https://placehold.it/1920x1080'
 				alt=''
 			></img>
 			<div className={s.ava}>AVA+discription</div>
