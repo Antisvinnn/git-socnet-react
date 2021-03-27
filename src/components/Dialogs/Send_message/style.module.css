@@ -1,0 +1,14 @@
+.container {
+	margin-top: 40px;
+	max-width: 500px;
+}
+
+.containerToButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#button_send {
+	margin-right: 10px;
+}

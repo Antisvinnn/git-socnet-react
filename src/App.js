@@ -21,7 +21,13 @@ const App = (props) => {
 				<Route
 					exact
 					path='/'
-					render={() => <Main state={props.state.Profile_page} />}
+					render={() => (
+						<Main
+							Profile_page={props.state.Profile_page}
+							addPost={props.addPost}
+							onChengeText={props.onChengeText}
+						/>
+					)}
 				/>
 				<Route
 					exact

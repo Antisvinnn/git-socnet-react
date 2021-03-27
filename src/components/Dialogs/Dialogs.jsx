@@ -1,6 +1,8 @@
+/* eslint-disable react/jsx-pascal-case */
 import s from './Dialogs.module.css';
 import DialogItemUser from './DialogItemUser.jsx';
 import DialogItemMessage from './DialogIItemMessage.jsx';
+import Send_message from './Send_message/Send_message.jsx';
 
 const Dialogs = ({ Dialogs_page }) => {
 	let dialogsElementUsers = Dialogs_page.Dialogs_data.map((dialog_user, i) => {
@@ -20,6 +22,7 @@ const Dialogs = ({ Dialogs_page }) => {
 				<div className={s.column_1}>{dialogsElementUsers}</div>
 				<div className={s.column_2}>{dialogElementMessages}</div>
 			</div>
+			<Send_message />
 		</div>
 	);
 };

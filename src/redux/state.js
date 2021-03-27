@@ -1,19 +1,12 @@
+import { rerenderEntireTree } from '../render';
+
 let state = {
 	Profile_page: {
 		Posts_data: [
-			{ message: 'Hello', like_count: 2 },
-			{ message: 'Good bye', like_count: 22 },
-			{ message: 'It is my first comment to you', like_count: 122 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 0 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 223567 },
-			{ message: 'Um vathasay', like_count: 223567 },
+			{ id: 2, message: 'Hello', like_count: 2 },
+			{ id: 2, message: 'Good bye', like_count: 22 },
+			{ id: 2, message: 'It is my first comment to you', like_count: 122 },
+			{ id: 2, message: 'Um vathasay', like_count: 223567 },
 		],
 		Friends: [
 			{ id: 1, name: 'Sveta', ava: '' },
@@ -28,6 +21,7 @@ let state = {
 			{ id: 10, name: 'Lera', ava: '' },
 			{ id: 11, name: 'Vladik', ava: '' },
 		],
+		newPostText: 'Hello lovely!!!!',
 	},
 	Dialogs_page: {
 		Dialogs_data: [
@@ -55,5 +49,16 @@ let state = {
 		],
 	},
 };
-
+export let addPost = (postMessage) => {
+	let newPost = {
+		id: 5,
+		message: postMessage,
+		like_count: 110,
+	};
+	state.Profile_page.Posts_data.push(newPost);
+	rerenderEntireTree(state);
+};
+export let onChengeText = () => {
+	document.getElementById('opopo').value = 'Hello Vitalik';
+};
 export default state;

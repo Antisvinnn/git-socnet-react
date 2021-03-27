@@ -10,7 +10,7 @@ const Header = () => {
 						src='http://placehold.it/40'
 						alt=''
 					/>
-					<div className={s.header_text}>Tipovoy-sday.by</div>
+					<div className={s.header_text}>TipovoiSdai.by</div>
 				</div>
 			</div>
 		</header>
