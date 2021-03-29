@@ -5,7 +5,7 @@ const Post = (props) => {
 		<div className={s.post}>
 			<img className={s.avatar_post} src='http://placehold.it/55' alt='' />
 			<div className={s.profile_posts_text}>
-				{props.message} <br />
+				<span>{props.message}</span> <br />
 				<span>лайки: {props.like_count}</span>
 			</div>
 		</div>

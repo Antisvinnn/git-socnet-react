@@ -1,4 +1,6 @@
-import { rerenderEntireTree } from '../render';
+let rerenderEntireTree = () => {
+	console.log('state was changed');
+};
 
 let state = {
 	Profile_page: {
@@ -56,9 +58,20 @@ export let addPost = (postMessage) => {
 		like_count: 110,
 	};
 	state.Profile_page.Posts_data.push(newPost);
-	rerenderEntireTree(state);
+	rerenderEntireTree();
 };
-export let onChengeText = () => {
-	document.getElementById('opopo').value = 'Hello Vitalik';
+export let addMessage = (MessageText) => {
+	let newMessage = {
+		id: 5,
+		Message: MessageText,
+	};
+	state.Dialogs_page.Messages_data.push(newMessage);
+	rerenderEntireTree();
+};
+export let onChengeText = (newText) => {
+	state.Profile_page.newPostText = newText;
+};
+export const subscribe = (observer) => {
+	rerenderEntireTree = observer;
 };
 export default state;

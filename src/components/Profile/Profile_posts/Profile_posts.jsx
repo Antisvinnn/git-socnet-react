@@ -10,49 +10,47 @@ const Profile_posts = (props) => {
 		);
 	});
 	let beforeAddPost = (values) => {
+		// console.log(values.input);
 		props.addPost(values.input);
 	};
-	let onChengeText = () => {
-		props.onChengeText();
+	let onChange = (values) => {
+		// console.log(props.newPostText);
+		props.onChengeText(values.nativeEvent.data);
 	};
 
 	return (
 		<div className={s.profile_posts}>
-			<div className={s.profile_container}>
-				<Form
-					labelCol='offset'
-					className={s.Form}
-					name='basic'
-					onFinish={beforeAddPost}
-				>
-					{/* TEXTAREA INPUT */}
-					<Form.Item name='input'>
-						<Input
-							value='asassss'
-							// onChange={onChengeText}
-							id='opopo'
-							size='middle'
-							className={s.input_area}
-							placeholder='Type your text'
-						/>
+			<Form
+				labelCol='offset'
+				className={s.Form}
+				name='basic'
+				onFinish={beforeAddPost}
+			>
+				{/* TEXTAREA INPUT */}
+				<Form.Item className={s.form_item} name='input'>
+					<Input
+						value={props.newPostText}
+						onChange={onChange}
+						maxLength='200'
+						allowClear
+						size='middle'
+						className={s.input_area}
+						placeholder='Type your text'
+					/>
+				</Form.Item>
+				{/* BUTTONS */}
+				<div className={s.container_to_buttons}>
+					<Form.Item className={s.form_item} name='button'>
+						<Button
+							htmlType='submit'
+							className={s.main_button}
+							type='primary'
+						>
+							Apply
+						</Button>
 					</Form.Item>
-					{/* BUTTONS */}
-					<div className={s.containerToButtons}>
-						<Form.Item name='button'>
-							<Button
-								htmlType='submit'
-								className={s.main_button}
-								type='primary'
-							>
-								Apply
-							</Button>
-						</Form.Item>
-						<Form.Item name='dissmis_button'>
-							<Button>Dismiss</Button>
-						</Form.Item>
-					</div>
-				</Form>
-			</div>
+				</div>
+			</Form>
 
 			<hr className={s.border_line} />
 

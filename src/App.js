@@ -33,7 +33,10 @@ const App = (props) => {
 					exact
 					path='/dialogs'
 					render={() => (
-						<Dialogs Dialogs_page={props.state.Dialogs_page} />
+						<Dialogs
+							Dialogs_page={props.state.Dialogs_page}
+							addMessage={props.addMessage}
+						/>
 					)}
 				/>
 				<Route path='/dialogs' component={Dialogs_non_active} />

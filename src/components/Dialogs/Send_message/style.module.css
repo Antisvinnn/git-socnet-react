@@ -3,12 +3,24 @@
 	max-width: 500px;
 }
 
-.containerToButtons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
 #button_send {
 	margin-right: 10px;
+}
+
+.form_item {
+	margin: 0;
+}
+
+.send_area {
+	display: flex;
+	flex-direction: row;
+}
+
+.input_area {
+	width: 865px;
+}
+
+.button_send {
+	width: 130px;
+	margin-left: 5px;
 }

@@ -1,9 +1,18 @@
 .post {
 	height: auto;
+	width: 1000px;
 }
 
 .avatar_post {
 	height: 65px;
 	width: 65px;
 	border-radius: 65px;
+}
+
+.profile_posts_text {
+	white-space: normal;
+}
+
+.profile_posts_text span {
+	max-width: 1000px;
 }

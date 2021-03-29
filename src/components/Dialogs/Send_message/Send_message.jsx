@@ -3,27 +3,30 @@ import React from 'react';
 import { Input, Form, Button } from 'antd';
 import FormItem from 'antd/lib/form/FormItem';
 
-const Send_message = () => {
-	let sendMessage = (values) => {
-		alert(values.input);
+const Send_message = (props) => {
+	let beforeSendMessage = (values) => {
+		props.addMessage(values.input);
 	};
 
 	return (
 		<div className={s.container}>
-			<Form name='form' onFinish={sendMessage}>
-				<FormItem name='input'>
-					<Input placeholder='Type your message' size='large'></Input>
+			<Form name='form' onFinish={beforeSendMessage} className={s.send_area}>
+				<FormItem name='input' className={s.form_item}>
+					<Input
+						placeholder='Type your message'
+						size='middle'
+						className={s.input_area}
+					></Input>
 				</FormItem>
-				<div className={s.containerToButtons}>
-					<FormItem name='button_send'>
-						<Button id={s.button_send} type='primary' htmlType='submit'>
-							Send
-						</Button>
-					</FormItem>
-					<FormItem name='button_dissmiss'>
-						<Button type='default'>Dissmiss</Button>
-					</FormItem>
-				</div>
+				<FormItem name='button_send' className={s.form_item}>
+					<Button
+						className={s.button_send}
+						type='primary'
+						htmlType='submit'
+					>
+						Send
+					</Button>
+				</FormItem>
 			</Form>
 		</div>
 	);

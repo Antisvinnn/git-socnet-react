@@ -9,22 +9,33 @@
 }
 
 .profile_container {
-	padding: 10px;
+	margin: 10px;
 }
 
 .input_area {
+	width: 865px;
 }
 
 .main_button {
-	margin-right: 10px;
+	width: 130px;
+	margin-left: 5px;
 }
 
-.containerToButtons {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: row;
+.container_to_buttons {
+	width: auto;
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .Form {
 	height: auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.form_item {
+	margin: 0;
 }
